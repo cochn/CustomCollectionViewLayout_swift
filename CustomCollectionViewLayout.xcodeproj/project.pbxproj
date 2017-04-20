@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0051685D1EA83A23005B4132 /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051685C1EA83A23005B4132 /* ClassModel.swift */; };
+		005168601EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051685E1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.swift */; };
+		005168611EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0051685F1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.xib */; };
+		005168641EA845AA005B4132 /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005168631EA845AA005B4132 /* CustomFlowLayout.swift */; };
 		00A9649E1EA62015000AEA22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A9649D1EA62015000AEA22 /* AppDelegate.swift */; };
 		00A964A01EA62015000AEA22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A9649F1EA62015000AEA22 /* ViewController.swift */; };
 		00A964A31EA62015000AEA22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A964A11EA62015000AEA22 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0051685C1EA83A23005B4132 /* ClassModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		0051685E1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayoutViewController.swift; sourceTree = "<group>"; };
+		0051685F1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewFlowLayoutViewController.xib; sourceTree = "<group>"; };
+		005168631EA845AA005B4132 /* CustomFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
 		00A9649A1EA62015000AEA22 /* CustomCollectionViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A9649D1EA62015000AEA22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00A9649F1EA62015000AEA22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005168621EA8454E005B4132 /* CustomFlowlayout */ = {
+			isa = PBXGroup;
+			children = (
+				0051685E1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.swift */,
+				0051685F1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.xib */,
+				005168631EA845AA005B4132 /* CustomFlowLayout.swift */,
+			);
+			name = CustomFlowlayout;
+			sourceTree = "<group>";
+		};
 		00A964911EA62014000AEA22 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +117,8 @@
 			children = (
 				00A9649D1EA62015000AEA22 /* AppDelegate.swift */,
 				00A9649F1EA62015000AEA22 /* ViewController.swift */,
+				0051685C1EA83A23005B4132 /* ClassModel.swift */,
+				005168621EA8454E005B4132 /* CustomFlowlayout */,
 				00A964A11EA62015000AEA22 /* Main.storyboard */,
 				00A964A41EA62015000AEA22 /* Assets.xcassets */,
 				00A964A61EA62015000AEA22 /* LaunchScreen.storyboard */,
@@ -233,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005168611EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.xib in Resources */,
 				00A964A81EA62015000AEA22 /* LaunchScreen.storyboard in Resources */,
 				00A964A51EA62015000AEA22 /* Assets.xcassets in Resources */,
 				00A964A31EA62015000AEA22 /* Main.storyboard in Resources */,
@@ -260,7 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005168601EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */,
+				0051685D1EA83A23005B4132 /* ClassModel.swift in Sources */,
 				00A964A01EA62015000AEA22 /* ViewController.swift in Sources */,
+				005168641EA845AA005B4132 /* CustomFlowLayout.swift in Sources */,
 				00A9649E1EA62015000AEA22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +532,7 @@
 				00A964C41EA62015000AEA22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00A964C51EA62015000AEA22 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +541,7 @@
 				00A964C71EA62015000AEA22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00A964C81EA62015000AEA22 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +550,7 @@
 				00A964CA1EA62015000AEA22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
