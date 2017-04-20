@@ -27,10 +27,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func loadData() {
         
-    //CustomCollectionViewFlowLayoutViewController
-        let model1 = ClassModel(classTitle: "继承于<UICollectionViewFlowLayout>", className: "CustomCollectionViewFlowLayoutViewController")
-        dataSource.append(model1)
-        
+        let classTitleArray = ["继承于<UICollectionViewFlowLayout>", "继承于<UICollectionViewLayout>"]
+        let classNameArray  = ["CustomCollectionViewFlowLayoutViewController", "CustomCollectionViewLayout"]
+        for i in 0...classTitleArray.count-1 {
+            
+            let model = ClassModel(classTitle: classTitleArray[i], className: classNameArray[i])
+            dataSource.append(model)
+        }
+            
         tableView?.reloadData()
     }
     
