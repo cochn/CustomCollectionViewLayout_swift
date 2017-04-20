@@ -2,8 +2,8 @@
 //  CustomCollectionViewLayoutUITests.swift
 //  CustomCollectionViewLayoutUITests
 //
-//  Created by 曹臣 on 2017/4/18.
-//  Copyright © 2017年 曹臣. All rights reserved.
+//  Created by cochn on 2017/4/18.
+//  Copyright © 2017年 cochn. All rights reserved.
 //
 
 import XCTest
