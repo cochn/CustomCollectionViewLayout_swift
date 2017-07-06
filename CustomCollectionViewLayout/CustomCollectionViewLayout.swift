@@ -8,14 +8,59 @@
 
 import UIKit
 
-class CustomCollectionViewLayout: UIViewController {
+class MyCollectionViewCell: UICollectionViewCell {
+    
+    var lable: UILabel!
+    
+    override init(frame: CGRect) {
+        
+        super.init(frame: frame)
+        
+        self.backgroundColor = UIColor.red
 
+        lable = UILabel.init(frame:self.bounds)
+        lable.textColor = UIColor.white
+        lable.textAlignment = NSTextAlignment.center
+        lable.backgroundColor = UIColor.clear
+        self.addSubview(lable)
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+class CustomCollectionViewLayout: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
+    @IBOutlet var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "cellIden")
     }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return 5;
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellIden", for: indexPath) as! MyCollectionViewCell
+        cell.lable.text = "\(indexPath.row)"
+        
+        
+        return cell
+        
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -91,9 +91,9 @@
 		005168621EA8454E005B4132 /* CustomFlowlayout */ = {
 			isa = PBXGroup;
 			children = (
+				005168631EA845AA005B4132 /* CustomFlowLayout.swift */,
 				0051685E1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.swift */,
 				0051685F1EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.xib */,
-				005168631EA845AA005B4132 /* CustomFlowLayout.swift */,
 			);
 			name = CustomFlowlayout;
 			sourceTree = "<group>";

@@ -32,12 +32,15 @@ class CustomLayout: UICollectionViewLayout {
     
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         
-        let radius: Double = 100
+        
         let centerX = (self.collectionView?.frame.size.width)! * 0.5
         let centerY = (self.collectionView?.frame.size.height)! * 0.5
-        let multi: Double = 50
         
-        let itemSize = CGSize.init(width: 50, height: 50)
+        let multi: Double = 100
+        let radius: Double = Double(centerX)
+        
+        let width = 50, height = 50
+        let itemSize = CGSize.init(width: width, height: height)
         
         let att: UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes.init(forCellWith: indexPath)
         att.size = itemSize
