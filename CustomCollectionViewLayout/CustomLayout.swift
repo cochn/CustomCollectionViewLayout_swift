@@ -9,7 +9,7 @@
 import UIKit
 
 class CustomLayout: UICollectionViewLayout {
-
+    
     private var atts: [UICollectionViewLayoutAttributes] = []
     
     override func prepare() {
@@ -23,6 +23,7 @@ class CustomLayout: UICollectionViewLayout {
             self.atts.append(att!)
         }
     }
+
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return self.atts
@@ -60,5 +61,11 @@ class CustomLayout: UICollectionViewLayout {
         }
         return att
     }
+    
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        return true
+    }
+
+    
     
 }

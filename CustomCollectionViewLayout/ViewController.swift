@@ -27,8 +27,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func loadData() {
         
-        let classTitleArray = ["继承于<UICollectionViewFlowLayout>", "继承于<UICollectionViewLayout>"]
-        let classNameArray  = ["CustomCollectionViewFlowLayoutViewController", "CustomCollectionViewLayout"]
+        let classTitleArray = [
+            "继承于<UICollectionViewFlowLayout>",
+            "继承于<UICollectionViewLayout>",
+            "EmojticonLayout继承于<UICollectionViewLayout>"
+        ]
+        let classNameArray  = [
+            "CustomCollectionViewFlowLayoutViewController",
+            "CustomCollectionViewLayout",
+            "EmoticonViewController"
+        ]
         for i in 0...classTitleArray.count-1 {
             
             let model = ClassModel(classTitle: classTitleArray[i], className: classNameArray[i])

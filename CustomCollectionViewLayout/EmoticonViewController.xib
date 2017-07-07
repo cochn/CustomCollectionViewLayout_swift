@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmoticonViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmoticonViewController" customModule="CustomCollectionViewLayout" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="so0-dv-9bT" id="BDw-d1-0pQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +19,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="so0-dv-9bT">
+                    <rect key="frame" x="10" y="191.5" width="355" height="284"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="284" id="FiU-td-4hI"/>
+                        <constraint firstAttribute="width" constant="355" id="c2c-TH-jiZ"/>
+                    </constraints>
+                    <collectionViewLayout key="collectionViewLayout" id="2io-fk-dhS" customClass="EmoticonLayout" customModule="CustomCollectionViewLayout" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZdQ-ej-lKH"/>
+                        <outlet property="delegate" destination="-1" id="5FN-OS-7gV"/>
+                    </connections>
+                </collectionView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="so0-dv-9bT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AtN-f0-Ica"/>
+                <constraint firstItem="so0-dv-9bT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PsS-hi-RVz"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>
     </objects>
 </document>

@@ -21,6 +21,9 @@
 		00A964A81EA62015000AEA22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A964A61EA62015000AEA22 /* LaunchScreen.storyboard */; };
 		00A964B31EA62015000AEA22 /* CustomCollectionViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A964B21EA62015000AEA22 /* CustomCollectionViewLayoutTests.swift */; };
 		00A964BE1EA62015000AEA22 /* CustomCollectionViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A964BD1EA62015000AEA22 /* CustomCollectionViewLayoutUITests.swift */; };
+		00E08E761F0E319000DF2465 /* EmoticonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E08E741F0E319000DF2465 /* EmoticonViewController.swift */; };
+		00E08E771F0E319000DF2465 /* EmoticonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E08E751F0E319000DF2465 /* EmoticonViewController.xib */; };
+		00E08E791F0E31BA00DF2465 /* EmoticonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E08E781F0E31BA00DF2465 /* EmoticonLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		00A964B91EA62015000AEA22 /* CustomCollectionViewLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionViewLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A964BD1EA62015000AEA22 /* CustomCollectionViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayoutUITests.swift; sourceTree = "<group>"; };
 		00A964BF1EA62015000AEA22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E08E741F0E319000DF2465 /* EmoticonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewController.swift; sourceTree = "<group>"; };
+		00E08E751F0E319000DF2465 /* EmoticonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewController.xib; sourceTree = "<group>"; };
+		00E08E781F0E31BA00DF2465 /* EmoticonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 				0051685C1EA83A23005B4132 /* ClassModel.swift */,
 				005168621EA8454E005B4132 /* CustomFlowlayout */,
 				005168651EA87FB3005B4132 /* CustomLayout */,
+				00E08E731F0E316400DF2465 /* Emoticonlayout */,
 				00A964A11EA62015000AEA22 /* Main.storyboard */,
 				00A964A41EA62015000AEA22 /* Assets.xcassets */,
 				00A964A61EA62015000AEA22 /* LaunchScreen.storyboard */,
@@ -160,6 +167,16 @@
 				00A964BF1EA62015000AEA22 /* Info.plist */,
 			);
 			path = CustomCollectionViewLayoutUITests;
+			sourceTree = "<group>";
+		};
+		00E08E731F0E316400DF2465 /* Emoticonlayout */ = {
+			isa = PBXGroup;
+			children = (
+				00E08E781F0E31BA00DF2465 /* EmoticonLayout.swift */,
+				00E08E741F0E319000DF2465 /* EmoticonViewController.swift */,
+				00E08E751F0E319000DF2465 /* EmoticonViewController.xib */,
+			);
+			name = Emoticonlayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +291,7 @@
 				00A964A81EA62015000AEA22 /* LaunchScreen.storyboard in Resources */,
 				0051686B1EA87FEE005B4132 /* CustomCollectionViewLayout.xib in Resources */,
 				00A964A51EA62015000AEA22 /* Assets.xcassets in Resources */,
+				00E08E771F0E319000DF2465 /* EmoticonViewController.xib in Resources */,
 				00A964A31EA62015000AEA22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +321,8 @@
 				005168601EA83B02005B4132 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */,
 				0051685D1EA83A23005B4132 /* ClassModel.swift in Sources */,
 				00A964A01EA62015000AEA22 /* ViewController.swift in Sources */,
+				00E08E761F0E319000DF2465 /* EmoticonViewController.swift in Sources */,
+				00E08E791F0E31BA00DF2465 /* EmoticonLayout.swift in Sources */,
 				005168641EA845AA005B4132 /* CustomFlowLayout.swift in Sources */,
 				00A9649E1EA62015000AEA22 /* AppDelegate.swift in Sources */,
 				0051686A1EA87FEE005B4132 /* CustomCollectionViewLayout.swift in Sources */,

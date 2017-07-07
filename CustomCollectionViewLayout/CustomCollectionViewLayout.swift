@@ -55,7 +55,6 @@ class CustomCollectionViewLayout: UIViewController, UICollectionViewDataSource, 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellIden", for: indexPath) as! MyCollectionViewCell
         cell.lable.text = "\(indexPath.row)"
         
-        
         return cell
         
     }
